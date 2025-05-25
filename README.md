@@ -1,6 +1,6 @@
-# ComprehendVision: Real-Time AI-Powered Visual Assistant
+# SIlver VI: Real-Time AI-Powered Visual Assistant
 
-**ComprehendVision** is an innovative project leveraging state-of-the-art machine learning and computer vision to provide real-time environmental understanding, primarily designed as an assistive technology for visually impaired individuals. This system processes live camera input to detect objects, describe scenes, and read text, aiming to enhance situational awareness and independence.
+**SIlver VI** is an innovative project leveraging state-of-the-art machine learning and computer vision to provide real-time environmental understanding, primarily designed as an assistive technology for visually impaired individuals. This system processes live camera input to detect objects, describe scenes, and read text, aiming to enhance situational awareness and independence.
 
 **(Note: This project is currently a functional prototype. Real-world testing with target users has not yet been conducted.)**
 
@@ -25,7 +25,7 @@
 11. [Acknowledgements](#acknowledgements) (Optional)
 
 ## Project Goal
-The primary objective of ComprehendVision is to translate complex visual information into accessible textual and auditory feedback. It aims to empower visually impaired users by providing them with a dynamic understanding of their surroundings, including object identification, scene context, and text present in their environment.
+The primary objective of SIlver VI is to translate complex visual information into accessible textual and auditory feedback. It aims to empower visually impaired users by providing them with a dynamic understanding of their surroundings, including object identification, scene context, and text present in their environment.
 
 ## Core Philosophy
 This project is built upon the following principles:
@@ -51,7 +51,7 @@ This project is built upon the following principles:
 *   **Auditory Feedback (via Browser TTS):** The web UI uses browser-based Text-to-Speech to announce system outputs, making it accessible.
 
 ## System Architecture
-ComprehendVision employs a modular, hybrid architecture:
+SIlver VI employs a modular, hybrid architecture:
 
 ![Conceptual Architecture Diagram - Placeholder: You can create a simple diagram for this]
 *(Conceptual: Camera -> Python Backend (YOLO -> [Offline Heuristics/BLIP | Online Gemini]) -> SocketIO -> Web UI (Display & TTS))*
