@@ -17,7 +17,7 @@ def check_internet_connection(host="8.8.8.8", port=53, timeout=3):
         socket.setdefaulttimeout(timeout)
         socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
         # print("Internet connection available.") # Optional: for debugging
-        return False # Force no internet
+        return True # Force no internet
     except socket.error as ex:
         # print(f"No internet connection: {ex}") # Optional: for debugging
         return False
