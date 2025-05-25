@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ComprehendVision UI - Pitch Black</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>ComprehendVision</h1>
+        <div id="connectionStatus" class="status-connecting">Connecting to server...</div>
+    </header>
+    <main>
+        <div class="video-controls-container">
+            <div class="video-container">
+                <h3>Live Camera Feed</h3>
+                <img id="videoFeed" src="{{ url_for('video_feed_route_func') }}" alt="Live Video Feed" width="640" height="480">
+            </div>
+            <div class="controls">
+                <h3>Controls</h3>
+                <div>
+                    <input type="checkbox" id="onlinePrefCheckbox" checked>
+                    <label for="onlinePrefCheckbox">Prefer Online Features</label>
+                </div>
+                <div id="onlineStatusText">Internet: Checking... | Mode: Online Preferred</div>
+                <button id="requestOfflineCaptionBtn">Request Offline Detail (BLIP)</button> 
+                <button id="requestOfflineOCRBtn">Request Offline OCR (Tesseract)</button>
+                <button id="clearInfoPanelsBtn">Clear Info Panels</button>
+            </div>
+        </div>
+
+        <div class="info-panels">
+            <div class="panel yolo-panel">
+                <h2>YOLO Detections & Scene Heuristic</h2>
+                <pre id="yoloDataPanel">Waiting for YOLO data...</pre>
+                <pre id="heuristicDataPanel">Waiting for Heuristic data...</pre>
+            </div>
+            <div class="panel caption-panel">
+                <h2>Detailed Scene Caption</h2>
+                <pre id="captionDataPanel">Waiting for Caption data...</pre>
+            </div>
+            <div class="panel ocr-panel">
+                <h2>OCR Results</h2>
+                <pre id="ocrDataPanel">Waiting for OCR data...</pre>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

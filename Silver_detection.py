@@ -29,13 +29,13 @@ except Exception as e:
 MODEL_NAME = 'yolov8s.pt'
 CAMERA_INDEX = 0
 # ... (rest of your configurations: CAMERA_INDEX, YOLO_CONFIDENCE_THRESHOLD, class lists, intervals) ...
-YOLO_CONFIDENCE_THRESHOLD = 0.5
+YOLO_CONFIDENCE_THRESHOLD = 0.8
 CRITICAL_OBJECT_CLASSES = ['person', 'bicycle', 'car', 'motorcycle', 'bus', 'train', 'truck', 'traffic light', 'stop sign', 'chair', 'couch', 'bed', 'dining table', 'laptop', 'cell phone', 'book', 'bottle', 'cup', 'door', 'backpack', 'handbag', 'suitcase']
 TEXT_BEARING_CLASSES = ['book', 'stop sign', 'laptop', 'cell phone', 'tv', 'bottle'] 
 LIVING_CLASSES = ['person', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe']
 YOLO_OUTPUT_INTERVAL = 0.5      
 SCENE_HEURISTIC_INTERVAL = 5  
-DETAILED_CAPTION_INTERVAL = 12 
+DETAILED_CAPTION_INTERVAL = 30 
 ONLINE_OCR_INTERVAL = 7  
 
 # --- TTS HELPER FUNCTION ---
